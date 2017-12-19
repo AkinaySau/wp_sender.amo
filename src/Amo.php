@@ -80,7 +80,7 @@ class Amo {
 				$amo = new \AmoCRM\Client( esc_attr( get_option( self::OPTION_NAME_SUBDOMAIN ) ), esc_attr( get_option( self::OPTION_NAME_LOGIN ) ), esc_attr( get_option( self::OPTION_NAME_HASH ) ) );
 
 				$contact = $amo->contact;
-
+				//todo: добавить возможность работы с данными через админку
 				$contact['name'] = $data['formData']['name']['value'] ?? __( 'Empty' );
 				$contact['tags'] = [
 					sprintf( 'Класс: %s', $data['formData']['class']['value'] ),
