@@ -1,0 +1,22 @@
+{
+	"name": "sau/amo",
+	"description": "This package extend sau_sender plugin",
+	"minimum-stability": "stable",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Akinay Sau",
+			"email": "akinaysau@gmail.com",
+			"homepage": "http://a-sau.ru",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Sau\\WP\\Plugin\\Sender\\Amo\\": "src/"
+		}
+	},
+	"require": {
+		"dotzero/amocrm": "v0.4.x-dev"
+	}
+}
